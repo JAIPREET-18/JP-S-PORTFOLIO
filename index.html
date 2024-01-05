@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link href="resume.css" rel="stylesheet"/>
+</head>
+<body>
+   
+    <div id="home" class="hero">
+        <nav>
+            <img src="lion-logopng-33390.png" class="logo">
+            <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#service">SERVICE</a></li>
+              <li><a href="#more about me">MORE ABOUT ME </a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="cont"
+        style="font-size: 20px;">
+        <div class="detail"></div>
+        <h3>Hello, It's Me</h3>
+        <h1>Jaipreet <span id="jp3"> Singh</span></h1>
+        <h3>And I'm a Web Developer</h3>
+        <p><bold>Welcome to My Official Portfolio Website!</bold><br>Explore a comprehensive showcase of my journey and accomplishments in the realm of web<br> development. Immerse yourself in the details of my work, skills, and the passion I bring to every project.</p>
+       
+        <a href="1.html" target="_blank"class="hero-btn"><bold>RESUME</bold></a>
+    </div>
+      <div class="images">
+        <img id="jp" src="WhatsApp Image 2024-01-05 at 19.52.40_1454f5da.jpg" height="500px"  class="boy">
+      </div>
+    </div>
+<section class="about" id="about">
+    <div id="jp2" class="about-img">
+
+    </div>
+</section>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Full stack developer!</h4>
+        <p>As a web developer, I am driven by a passion for creating innovative and user-friendly digital experiences.<br> With a foundation in HTML, CSS, and JavaScript, I am dedicated to crafting responsive and visually<br> appealing websites. My journey in web development has equipped me with the skills to transform ideas into<br> functional and dynamic online platforms. Constantly exploring new technologies and staying updated<br> with industry trends, I strive to deliver not just code but solutions that enhance the user's interaction and<br> overall experience. Collaborative by nature, I enjoy working in teams where diverse perspectives<br> contribute to the success of aproject. From designing sleek interfaces to optimizing backend<br> functionality, my goal is to contribute to the ever-evolving landscape of the web by creating<br> solutions that are both elegant and efficient. As a web developer, I am excited about the endless<br> possibilities and challenges that come with building for the digital world.</p>
+
+</section>
+<section class="course">
+       <div class="example-contanier" id="service">
+        <div class="example-box">
+        <a href="4.html"target="_blank"> <img class="example-image" src="course_1663052056.jpg" alt="Example 1"></a>
+            <div class="example-content">
+                <h1>Web Development:</h1> 
+            </div>
+        </div>
+
+        <div class="example-box">
+            <a href="3.html"target="_blank">   <img class="example-image" src="Future-and-Scope-of-UIUX-Design.webp" alt="Example 2"></a>
+            <div class="example-content">
+                <h1>UI/UX Design:</h1>
+            </div>
+        </div>
+
+        <div class="example-box" >
+            <a href="2.html"target="_blank"> <img class="example-image" src="PSX_20200524_143155.webp" alt="Example 3"></a>
+            <div class="example-content">
+                <h3>
+                    Technical Writing:
+                </h3>
+            </div>
+        </div> 
+</div>
+
+</section>
+<section class="more_abt_me">
+    <div class="abt_text" id="more about me">
+        <h2>MORE <span>ABOUT</span> ME</h2>
+        <h4>Basketball:</h4>
+        <p>"I am a dedicated and accomplished basketball player, proudly representing both my schooland university on the court. Fueled by a profound passion for the game and a commitment to<br> excellence, I have refined my skills through years of disciplined training and competitive play. Serving as a key player for both my school and university teams, I have contributed<br> significantly to memorable victories, showcasing not only my athleticism but also my leadership and teamwork abilities. Whether sinking crucial shots or providing steadfast defense, I<br> thrive in high-pressure situations. My journey in basketball has not only shaped me as an athlete but has also instilled in me valuable life skills such as discipline, perseverance, and effective teamwork."</p>
+        <h4>Cooking:</h4>
+        <p>Cooking holds a special place in my heart, as it is not merely a daily chore but a passionate pursuit that brings me immense joy. The kitchen is my canvas, and each recipe is an opportunity to explore and create. The sizzling sounds, enticing aromas, and vibrant colors evoke a sense of excitement and fulfillment. Whether experimenting with new flavors or recreating cherished family recipes, I find solace in the rhythmic dance of chopping, sautéing, and simmering. The art of cooking allows me to express my creativity and share my love with others through the delightful experience of a well-prepared meal. From mastering the precision of measurements to embracing the spontaneity of flavor improvisations, the kitchen is my sanctuary, a space where passion and culinary craftsmanship beautifully converge.</p>
+        <h4>Biking:</h4>
+        <p>"I find immense joy and fulfillment in the exhilarating activity of biking. The feeling of the wind against my face and the rhythmic pedal strokes create a sense of liberation and connection with the surrounding environment. Biking is not just a physical exercise for me; it's a therapeutic escape that allows me to explore new landscapes, clear my mind, and appreciate the beauty of nature. Whether navigating through scenic trails or cruising along city streets, the sense of freedom and the simple pleasure of propelling myself forward bring unparalleled satisfaction. Biking has become more than a hobby; it's a source of rejuvenation and a constant reminder of the sheer joy found in embracing the open road.</p>
+        <h1 id="contact">contact:</h1>
+        phone number:(+91)8951204466.<br>
+        email id:jaipreet317@gmail.com.
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <input type="text" id="message-input" placeholder="Type your message">
+    <button onclick="sendMessage()">Send</button>
+    
+    <div id="chat-box"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="app.js"></script>
+    <style>body {
+        font-family: Arial, sans-serif;
+    
+    }
+    
+    #chat-box {
+        height: 50px;
+        border: 1px solid #835ef3;
+        padding: 10px;
+    }
+    .user-message {
+            color: rgb(21, 210, 43); 
+        }
+
+        .system-message {
+            color: red; 
+        }
+    #message-input {
+        width: 70%;
+        padding: 5px;
+    }
+    
+    button {
+        padding: 0px;
+    }
+    </style>
+    <script>
+        const socket = io();
+
+function sendMessage() {
+    const messageInput = document.getElementById('message-input');
+    const message = messageInput.value;
+
+    if (message.trim() !== '') {
+        // Send the message to the server
+        socket.emit('chat message', message);
+
+        // Display the message in the chat box
+        displayMessage('You', message);
+
+        // Clear the input field
+        messageInput.value = '';
+    }
+}
+
+function displayMessage(sender, message) {
+    const chatBox = document.getElementById('chat-box');
+    const messageElement = document.createElement('div');
+    messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+    chatBox.appendChild(messageElement);
+
+    // Scroll to the bottom to show the latest messages
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+// Listen for incoming messages from the server
+socket.on('chat message', (data) => {
+    const { sender, message } = data;
+    displayMessage(sender, message);
+});
+</script>
+    
+<footer>
+    <p>&copy; 2023 Jaipreet singh</p>
+</footer>
+</body>
+</html>
